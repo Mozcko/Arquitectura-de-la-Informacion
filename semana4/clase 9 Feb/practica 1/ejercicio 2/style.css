@@ -1,0 +1,29 @@
+body {
+  background-color: grey;
+  color: greenyellow;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+  color: blue;
+  font-size: large;
+}
+
+h1 {
+  color: aqua;
+}
+
+h2 {
+  color: aqua;
+}
+
+h3 {
+  color: red;
+  font-size: large;
+}
+
+li {
+    color: tan;
+}
+
