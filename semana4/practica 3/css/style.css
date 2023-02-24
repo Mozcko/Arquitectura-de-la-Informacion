@@ -30,6 +30,7 @@ p {
   background: #00c2cb;
 }
 
+/*
 .container {
   max-width: 1540px;
 }
@@ -45,7 +46,7 @@ p {
 /*
     columnas del archivo
 */
-
+/*
 .one-column {
   flex: 0 0 100%;
   max-width: 100%;
@@ -135,7 +136,7 @@ p {
 }
 
 .header-nav-option {
-  text-align: right;;
+  text-align: right;
   padding: 50px 0px;
 }
 
@@ -205,7 +206,7 @@ p {
   size: 37px;
   color: white;
   height: 40px;
-  padding-left: 60px;
+  padding-left: 15px;
   display: inline-block;
   position: relative;
   float: left;
@@ -271,7 +272,7 @@ banner promocional
 
 .offer-price{
   height: 100px;
-  width: 120px;
+  width: 100px;
   border-radius: 50%;
   background: black;
   padding-top: 22px;
