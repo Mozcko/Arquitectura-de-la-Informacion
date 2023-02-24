@@ -51,7 +51,7 @@ p {
   max-width: 100%;
 }
 
-.cuarter-column {
+.quarter-column {
   flex: 0 0 25%;
   max-width: 25%;
 }
@@ -79,7 +79,7 @@ p {
 */
 
 .header {
-  background-color: aqua;
+  background-color: white;
 }
 
 .header-top {
@@ -97,7 +97,7 @@ p {
 */
 
 .header-logo {
-  padding: 10px;
+  padding: 5px;
 }
 
 .header-logo a {
@@ -122,7 +122,7 @@ p {
 
 .header-menu ul li a {
   font-size: medium;
-  color: cornflowerblue;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -131,21 +131,23 @@ p {
 }
 
 .header-menu ul li a:hover {
-  color: white;
+  color: #00c2cb;
 }
 
 .header-nav-option {
-  text-align: right;
+  text-align: right;;
   padding: 50px 0px;
 }
 
 .header-nav-option a {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-right: 26px;
   position: relative;
 }
 
 .header-nav-option a span {
+  color: #3d3d3d;
+  font-size: smaller;
   position: absolute;
   left: 5px;
   top: 5px;
@@ -153,7 +155,7 @@ p {
 
 .header-nav-option .price {
   color: #3d3d3d;
-  font-size: small;
+  font-size: smaller;
   font-weight: bold;
   margin-left: -20px;
   display: inline-block;
@@ -166,9 +168,8 @@ p {
 
 .bgimage {
   width: 100%;
-  height: 100%;
-
-  background-image: linear-gradient(rgba(0, 194, 203, 0.2)),
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 194, 203, 0.2), rgba(0, 194, 203, 0.2)),
     url(../img/formal_conjunto.jpg);
   background-position: center;
   background-size: cover;
@@ -184,22 +185,209 @@ p {
 }
 
 .bgimage .background h3{
-    font-size: large;
+    font-size: larger;
     padding-top: 50px;
-    color: coral;
+    color: white;
     text-shadow: 2px 2px #000;
 }
 
 .bgimage .background p{
-    color: burlywood;
+    color: white;
     font-size: larger;
 }
 
 .icon-bg{
-    background-color: lightslategray;
+    background-color: #00c2cb;
     padding-inline: 30px;
 }
 
 .icon{
+  size: 37px;
+  color: white;
+  height: 40px;
+  padding-left: 60px;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+.icon-content{
+  float: left;
+  margin-left: 15px;
+  color: white;
+}
+
+.icon-captions{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: aquamarine;
+  display: block;
+  position: relative;
+}
+
+.icon-subcaption{
+  font-size: 14px;
+  display: block;
+  position: relative;
+}
+
+/*
+categorías
+*/
+
+.categories{
+  padding: 3cm;
+  padding-left: 100px;
+}
+
+/*
+banner promocional
+*/
+
+.offer{
+  padding: 40px 15% 0px;
+}
+
+.offer h2{
+  color: lightslategray;
+  line-height: 72px;
+  font-size: 34px;
+}
+
+.offer h2 span{
+  font-weight: 700;
+  color: black;
+}
+
+.offer-center{
+  position: relative;
+  z-index: 5;
+}
+
+.offer-center img{
+  min-width: 100%;
+}
+
+.offer-price{
+  height: 100px;
+  width: 120px;
+  border-radius: 50%;
+  background: black;
+  padding-top: 22px;
+  text-align: center;
+  position: absolute;
+  right: 50px;
+  top: -36px;
+}
+
+.offer-price span{
+  display: block;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.offer-price h5{
+  color: lightcyan;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.offer-counter span{
+  color: brown;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.offer-counter h2 {
+  color: black;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 25px;
+}
+
+.offer-counter .offer-counter-clock{
+  margin-bottom: 25px;
+  overflow: hidden;
+  margin-left: -30px; 
+}
+
+.offer-counter .offer-counter-clock .cd-item{
+  width: 25%;
+  float: left;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.offer-counter .offer-counter-clock .cd-item:after{
+  position: absolute;
+  right: 0;
+  top: 7px;
+  content: ":";
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+.offer-counter .offer-counter-clock .cd-item:last-child:after{
+  display: none;
+}
+
+.offer-counter .offer-counter-clock .cd-item span{
+  color: #3d3d3d;
+  font-weight: 700;
+  font-size: 36px;
+  display: block;
+}
+
+.offer-counter .offer-counter-clock .cd-item p{
+  margin-bottom: 0px;
+}
+
+/*
+  icono de WhatsApp
+*/
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-whatsapp{
+  margin-top: 16px;
+}
+
+/*
+footer
+*/
+
+footer{
+  padding: 20px;
+  background-color: #00c2cb;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+footer span a {
+  font-size: 37px;
+  color: white;
+  text-decoration: none;
 
 }
