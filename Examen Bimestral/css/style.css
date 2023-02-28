@@ -151,6 +151,70 @@ p {
   display: block;
 }
 
+.audio {
+  background-color: #000000;
+  padding: 30px;
+}
+
+.audio .audio-p p {
+  padding-top: 30px;
+  color: #eee5e9;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Trebuchet MS";
+}
+
+.auto-img {
+  width: 85vmin;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 10% 25% 30% rgba(0, 0, 0, 0.3);
+}
+
+.auto-img img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.audio-btn {
+  padding-top: 30px;
+}
+
 /*
   icono de WhatsApp
 */
@@ -180,17 +244,26 @@ footer {
   padding: 20px;
   background-color: #7c7c7c;
   text-align: left;
-  margin-top: 20px;
   color: #eee5e9;
 }
 
-footer span a {
+.socialM span a {
   font-size: 37px;
   color: #eee5e9;
   text-decoration: none;
   transition: 0.5s;
 }
 
-footer span a:hover {
+.socialM span p {
+  color: #eee5e9;
+  text-align: justify;
+  font-size: larger;
+}
+
+.socialM span a:hover {
   color: #000000;
+}
+
+.copyrights {
+  text-align: center;
 }
