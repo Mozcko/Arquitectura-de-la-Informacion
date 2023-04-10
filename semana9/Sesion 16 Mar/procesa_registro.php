@@ -38,7 +38,15 @@
 </head>
 
 <body>
-
+    <section class="container-fluid bg-light p-5">
+        <h1>Los datos proporcionados fueron los siguientes</h1>
+        <h3>Nombre: <span class = "text-info"><?php echo $_GET['nombre']; ?></span></h3>
+        <h3>Apellido: <span class = "text-info"><?php echo $_GET['apellido']; ?></span></h3>
+        <h3>Email: <span class = "text-info"><?php echo $_GET['email']; ?></span></h3>
+        <h3>Teléfono: <span class = "text-info"><?php echo $_GET['phone']; ?></span></h3>
+        <h3>Contraseña: <span class = "text-info"><?php echo $_GET['pwd']; ?></span></h3>
+        <h3>Contraseña confirmada: <span class = "text-info"><?php echo $_GET['pwd2']; ?></span></h3>
+    </section>
 </body>
 
 </html>

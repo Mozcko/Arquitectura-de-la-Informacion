@@ -112,7 +112,7 @@
 
                 <!--formulario de inicio de sesión-->
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <form class="row g-3">
+                    <form class="row g-3" action = "procesa_sesion.php" method = "post">
                         <h1 class="h3 mb-3 fw-normal col text-center">Please sign in</h1>
 
                         <p>los campos con <label style="color: red;">*</label> son obligatorios</p>
@@ -120,11 +120,11 @@
                         <p>Si ya cuentas con los beneficios de la tienda virtual. inicia sesión con tu correo electrónico y contraseña</p>
 
                         <div class="form-floating">
-                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required name="email">
                           <label for="floatingInput">Correo electrónico <label style="color: red;">*</label></label>
                         </div>
                         <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                           <label for="floatingPassword">Contraseña <label style="color: red;">*</label></label>
                         </div>
                         <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
@@ -133,7 +133,7 @@
 
                 <!--formulario crear cuenta-->
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <form class="row g-3">
+                    <form class="row g-3" action = "procesa_registro.php" method = "post">
                         <h1 class="h3 mb-3 fw-normal col text-center">Please sign in</h1>
 
                         <p>los campos con <label style="color: red;">*</label> son obligatorios</p>
@@ -166,13 +166,13 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingInput" placeholder="password" required>
+                                <input type="password" class="form-control" id="floatingInput" placeholder="password" required name="pwd">
                                 <label for="floatingInput">Contraseña <label style="color: red;">*</label></label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingInput" placeholder="password" required>
+                                <input type="password" class="form-control" id="floatingInput" placeholder="password" required name="pwd2">
                                 <label for="floatingInput">Confirmar contraseña <label style="color: red;">*</label></label>
                             </div>
                         </div>
