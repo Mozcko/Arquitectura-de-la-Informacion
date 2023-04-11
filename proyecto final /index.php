@@ -99,7 +99,7 @@
               <div class="container">
                 <img src="img/audifonos.jpg" alt="" />
                 <p>
-                  <a href="#" class="primary-btn"><span>audio</span></a>
+                  <a href="shop.html" class="primary-btn"><span>audio</span></a>
                 </p>
               </div>
             </article>
@@ -107,7 +107,7 @@
               <div class="container">
                 <img src="img/gadgets.jpg" alt="" />
                 <p>
-                  <a href="#" class="primary-btn"><span>gadgets</span></a>
+                  <a href="shop.html" class="primary-btn"><span>gadgets</span></a>
                 </p>
               </div>
             </article>
@@ -115,7 +115,7 @@
               <div class="container">
                 <img src="img/werables.jpg" alt="" />
                 <p>
-                  <a href="#" class="primary-btn"><span>werables</span></a>
+                  <a href="shop.html" class="primary-btn"><span>werables</span></a>
                 </p>
               </div>
             </article>
@@ -123,7 +123,7 @@
               <div class="container">
                 <img src="img/laptops.jpg" alt="" />
                 <p>
-                  <a href="#" class="primary-btn"><span>laptops</span></a>
+                  <a href="shop.html" class="primary-btn"><span>laptops</span></a>
                 </p>
               </div>
             </article>
@@ -131,7 +131,9 @@
         </div>
       </section>
 
-      <!--Productos de Audio-->
+      <!--Carrousel de imágenes-->
+
+      <!--necesita modificarse usando #bootstrap-->
       <section class="audio">
         <div class="container-fluid">
           <div class="audio-p">
