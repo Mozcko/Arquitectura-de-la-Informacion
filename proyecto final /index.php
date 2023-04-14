@@ -151,7 +151,7 @@
           <div class="audio-btn">
             <div class="text-center">
               <p>
-                <a href="#" class="primary-btn"><span>Comprar</span></a>
+                <a href="shop.html" class="primary-btn"><span>Comprar</span></a>
               </p>
             </div>
           </div>
