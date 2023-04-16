@@ -24,8 +24,12 @@
 
     <!--css-->
     <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--scripts-->
+
+    <!--script de ordenes-->
+    <script type="text/javascript" src="js/orders.js"></script>
 
     <!--script de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -35,17 +39,34 @@
 </head>
 
 <body>
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><img src="img/logotipo-moda.png" style="width: 10%;" alt=""></a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Buscar" aria-label="Search">
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="#">salir</a>
+    <header class="navbar navbar-dark sticky-top fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top text-start">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo full(fixed).png" height="28" alt="Brand">
+            </a>
+            <button type="button" class="navbar-toggler text-light bg-light" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.php" class="nav-item ">Inicio</a>
+                    <a href="shop.html" class="nav-item ">Comprar</a>
+                </div>
+                <form class="d-flex navbar-nav ms-auto" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-secondary" type="submit">
+                      Buscar
+                    </button>
+                </form>
             </div>
         </div>
+      </nav>
     </header>
 
     <div class="container-fluid">
@@ -91,7 +112,7 @@
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Bienvenido <span><?php echo $_POST["email"]; ?> </span></h1>
+                    <h1 class="h2">Bienvenido <span id="mail"><?php echo $_POST["email"]; ?> </span></h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
                             <button type="button" class="btn btn-sm btn-outline-secondary">compartir</button>
@@ -121,7 +142,7 @@
                                 <th scope="col">Detalle</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tabla">
 
                         </tbody>
                     </table>
@@ -130,4 +151,5 @@
         </div>
     </div>
 </body>
+
 </html>
